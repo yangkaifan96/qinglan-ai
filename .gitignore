@@ -8,14 +8,21 @@ target/
 *.ipr
 *.iws
 
-# VS Code / Cursor
+# Shared editor settings are versioned; local editor state is not.
 .vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sw?
 
 # Vue / Node.js
 node_modules/
 dist/
+dist-ssr/
 coverage/
 *.tsbuildinfo
+.eslintcache
+*.timestamp-*-*.mjs
 
 # Logs
 *.log
@@ -25,8 +32,10 @@ replay_pid*
 
 # Environment
 .env.*
+!.env
 !.env.dev
 !.env.example
+*.local
 
 # OS
 .DS_Store
