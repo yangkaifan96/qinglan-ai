@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Spring Boot -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>4.1.1</version>
+        <relativePath/>
+    </parent>
+
+    <!-- 项目信息 -->
+    <groupId>com.qinglan.ai</groupId>
+    <artifactId>qinglan-ai-server</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>qinglan-ai-server</name>
+    <description>Qinglan Personal AI System</description>
+
+    <!-- Maven 子模块 -->
+    <modules>
+        <module>qinglan-ai-app</module>
+        <!-- 后续逐步添加 -->
+        <!-- <module>qinglan-ai-common</module> -->
+        <!-- <module>qinglan-ai-chat</module> -->
+        <!-- <module>qinglan-ai-auth</module> -->
+        <!-- <module>qinglan-ai-memory</module> -->
+        <!-- <module>qinglan-ai-knowledge</module> -->
+        <!-- <module>qinglan-ai-agent</module> -->
+    </modules>
+
+    <!-- 统一版本配置 -->
+    <properties>
+        <java.version>21</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring-ai.version>2.0.1</spring-ai.version>
+    </properties>
+
+    <!-- 统一依赖版本管理 -->
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- Spring AI BOM -->
+            <dependency>
+                <groupId>org.springframework.ai</groupId>
+                <artifactId>spring-ai-bom</artifactId>
+                <version>${spring-ai.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>

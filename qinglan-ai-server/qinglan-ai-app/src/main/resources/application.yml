@@ -1,0 +1,7 @@
+# 全局配置
+spring:
+  application:
+    name: qinglan-ai
+  # 未显式指定 Profile 时，默认使用 dev
+  profiles:
+    default: dev
