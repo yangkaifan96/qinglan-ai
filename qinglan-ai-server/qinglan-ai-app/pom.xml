@@ -28,6 +28,19 @@
             <artifactId>spring-boot-starter-webmvc</artifactId>
         </dependency>
 
+        <!-- 认证模块 -->
+        <dependency>
+            <groupId>com.qinglan.ai</groupId>
+            <artifactId>qinglan-ai-auth</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!-- MySQL JDBC -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <scope>runtime</scope>
+        </dependency>
     </dependencies>
 
     <build>

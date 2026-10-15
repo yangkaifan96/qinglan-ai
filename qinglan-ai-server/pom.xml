@@ -25,10 +25,11 @@
     <!-- Maven 子模块 -->
     <modules>
         <module>qinglan-ai-app</module>
+        <module>qinglan-ai-auth</module>
         <!-- 后续逐步添加 -->
         <!-- <module>qinglan-ai-common</module> -->
         <!-- <module>qinglan-ai-chat</module> -->
-        <!-- <module>qinglan-ai-auth</module> -->
+
         <!-- <module>qinglan-ai-memory</module> -->
         <!-- <module>qinglan-ai-knowledge</module> -->
         <!-- <module>qinglan-ai-agent</module> -->
@@ -39,6 +40,8 @@
         <java.version>21</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring-ai.version>2.0.1</spring-ai.version>
+        <!-- MyBatis-Plus -->
+        <mybatis-plus.version>3.5.17</mybatis-plus.version>
     </properties>
 
     <!-- 统一依赖版本管理 -->
@@ -52,6 +55,13 @@
                 <version>${spring-ai.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <!-- MyBatis-Plus -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-spring-boot4-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
             </dependency>
 
         </dependencies>
