@@ -5,3 +5,10 @@ spring:
   # 未显式指定 Profile 时，默认使用 dev
   profiles:
     default: dev
+  # 数据库版本管理
+  flyway:
+    enabled: true
+    # 指定迁移脚本目录
+    locations: classpath:db/migration
+    # 禁止自动为已有非空数据库建立基线，避免掩盖结构不一致的问题。
+    baseline-on-migrate: false
