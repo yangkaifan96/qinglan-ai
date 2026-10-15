@@ -15,3 +15,14 @@ spring:
     username: ${QL_MYSQL_USERNAME}
     password: ${QL_MYSQL_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+# 青岚业务配置
+qinglan:
+  # 部署模式：LOCAL 本地私人部署，SERVER 服务器部署
+  deployment:
+    mode: ${QL_DEPLOYMENT_MODE:LOCAL}
+
+  auth:
+    # SERVER 模式是否允许后续用户注册
+    # 首个账号始终允许初始化，LOCAL 模式始终只允许一个账号
+    registration-enabled: ${QL_REGISTRATION_ENABLED:false}

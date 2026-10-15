@@ -21,11 +21,11 @@
     <description>Qinglan AI Application</description>
 
     <dependencies>
-
-        <!-- Spring MVC -->
+        <!-- 公共模块 -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webmvc</artifactId>
+            <groupId>com.qinglan.ai</groupId>
+            <artifactId>qinglan-ai-common</artifactId>
+            <version>${project.version}</version>
         </dependency>
 
         <!-- 认证模块 -->
@@ -33,6 +33,12 @@
             <groupId>com.qinglan.ai</groupId>
             <artifactId>qinglan-ai-auth</artifactId>
             <version>${project.version}</version>
+        </dependency>
+
+        <!-- Spring MVC -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webmvc</artifactId>
         </dependency>
 
         <!-- MySQL JDBC -->

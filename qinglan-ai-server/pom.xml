@@ -26,10 +26,9 @@
     <modules>
         <module>qinglan-ai-app</module>
         <module>qinglan-ai-auth</module>
+        <module>qinglan-ai-common</module>
         <!-- 后续逐步添加 -->
-        <!-- <module>qinglan-ai-common</module> -->
         <!-- <module>qinglan-ai-chat</module> -->
-
         <!-- <module>qinglan-ai-memory</module> -->
         <!-- <module>qinglan-ai-knowledge</module> -->
         <!-- <module>qinglan-ai-agent</module> -->
